@@ -1,0 +1,372 @@
+
+/*==================================
+        Common Css
+==================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;900&display=swap');
+:root{
+    --white: #ffffff;
+    --dwhite: #eeeeee;
+    --black: #000000;
+    --dblack: #192a56;
+    --pm-color: #0D4C92;
+    --green: #008000;
+    --grey : #666;
+    --box-shadow: 2px 4px 10px var(--grey) ;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+section{
+    padding: 5px 7%;
+}
+section:nth-child(even){
+    background-color: var(--dwhite);
+}
+
+/*==================================
+    Header Area
+=====================================*/
+#header-area{
+    font-size: 65%;
+    background-color: var(--white) ;
+    padding: 5px 7%;
+    z-index: 1000;
+    scroll-padding-top: 5.5rem;
+    overflow-x: hidden;
+    box-shadow: var(--box-shadow);
+ }
+.navbar{
+     justify-content: space-between;
+     display: flex;
+     padding: 10px;
+     align-items: center;
+ }
+
+ #header-area .logo a{
+     color: var(--pm-color);
+     font-size: 40px;
+     font-weight: 600;
+ }
+ #header-area .logo a i{
+     color: var(--green);
+     margin-right: 5px;
+ }
+
+ .navbar .main-menu{
+     align-items: center;
+     justify-content: space-between;
+ }
+
+ .navbar {
+     z-index: 100;
+ }
+ .navbar .main-menu ul li{
+     list-style: none;
+     display: inline-block;
+     font-size: 20px;
+     border-radius: 5px;
+     padding: 5px 10px;
+ }
+ 
+ .navbar .main-menu ul li:hover{
+     background-color: var(--pm-color);
+ }
+
+ .navbar .main-menu ul li a{
+     color: var(--grey);
+ }
+ .navbar .main-menu ul li:hover a{
+     color: var(--white);
+ }
+ .social-icons i{
+    cursor: pointer;
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+    color: var(--dblack);
+    margin-left: 8px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--dwhite);
+    vertical-align: middle;
+    text-align: center;
+ }
+ .social-icons i:hover{
+   color: var(--white);
+   background-color: var(--pm-color);
+   rotate: 360deg;
+ }
+ #menu-bar{
+     display: none;
+ }
+ /*============================
+   Slider Area
+=============================*/
+
+.slider-class .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+.slider-class .content .details-area{
+ 
+}
+.slider-class .content .details-area h3{
+    font-size: 60px;
+    color: var(--pm-color);
+    margin-top: 2px;
+}
+.slider-class .content .details-area p{
+    font-size: 35px;
+    color: var(--pm-color);
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+.slider-class .content .details-area a.slider-btn{
+    background-color: var(--pm-color);
+    color: var(--white);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.slider-class .content .details-area a.slider-btn:hover{
+    background-color: var(--green);
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+.slider-class .content .image img{
+    max-width: 100%;
+    padding: 16px;
+}
+.swiper-pagination-bullet-active{
+    background-color: var(--pmcolor) !important;
+}
+/*=============================
+    About My
+==============================*/
+#about-area{
+    margin-bottom: 60px;
+}
+#about-area .head-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#about-area .head-title h3.title {
+    color: var(--pm-color);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+#about-area .head-title p.description {
+    color: var(--green);
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+.about-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+.about-container .image img{
+    max-width: 100%;
+    padding: 16px;
+}
+.about-container .about-info h6 {
+    color: var(--pm-color);
+    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.about-container .about-info h3 {
+    color: var(--pm-color);
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.btn-cta {
+    background: var(--pm-color);
+    color: #fff;
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+.btn-cta:hover{
+    background-color: var(--green);
+    letter-spacing: 0.5px;
+}
+/*===========================
+    Service Area
+===========================*/
+#service-area{
+    padding-bottom: 40px;
+}
+#service-area .head-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#service-area .head-title h3.title {
+    color: var(--pm-color);
+    font-size: 60px;
+    text-transform: uppercase;
+}
+#service-area .head-title p.description {
+    color: var(--green);
+    font-size: 20px;
+}
+#service-area .content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-items: center;
+}
+#service-area .content .box{
+    background-color: var(--white);
+    padding: 20px;
+    height: 300px;
+    border-radius: 10px;
+}
+#service-area .content .box i{
+    color: var(--pm-color);
+    font-size: 50px;
+}
+#service-area .content .box h4{
+    color: var(--pm-color);
+    font-size: 25px;
+    margin-top: 5px;
+}
+#service-area .content .box p{
+    font-size: 16px;
+    margin-top: 5px;
+    color: var(--grey);
+}
+#service-area .content .box:hover{
+    cursor: pointer;
+    background-color: var(--pm-color);
+}
+#service-area .content .box:hover i{
+    color: var(--white);
+}
+#service-area .content .box:hover h4{
+    color: var(--white);
+}
+#service-area .content .box:hover p{
+    color:orange;
+}
+/*=============================
+    Latest Work
+==============================*/
+#latest-work{
+    padding-bottom: 40px;
+}
+#latest-work .head-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#latest-work .head-title h3.title {
+    color: var(--pm-color);
+    font-size: 46px;
+    text-transform: uppercase;
+}
+#latest-work .head-title p.description {
+    color: var(--green);
+    font-size: 20px;
+}
+/*===========================
+    Customer Review
+============================*/
+#customer-review{
+    padding-bottom: 40px;
+}
+#customer-review .head-title{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#customer-review .head-title h3.title {
+    color: var(--pm-color);
+    font-size: 40px;
+    text-transform: uppercase;
+}
+#customer-review .head-title p.description {
+    color: var(--green);
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+ /*===========================
+    Responsive
+=============================*/
+ @media (max-width:1024px) {
+    #menu-bar{
+        display: inline-block;
+    }
+    .main-menu{
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        padding: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        width: 100%
+    }
+    .navbar .main-menu ul li{
+        vertical-align: middle;
+        display: block;
+        padding: 10px;
+        font-size: 30px;
+        background-color: var(--white);
+    }
+    .navbar .main-menu ul li:hover{
+        color: var(--dblack);
+        background-color: var(--dwhite);
+    }
+    .navbar .main-menu ul li:hover a{
+        color: var(--dblack);
+        background-color: var(--dwhite);
+    }
+}
+@media (max-width:570px) {
+    header{
+        padding: 5px 2px;
+     } 
+     #header-area .logo a{
+        color: var(--pm-color);
+        font-size: 25px;
+        font-weight: 600;
+    } 
+    .social-icons i{
+        font-size: 12px;
+        width: 30px;
+        height: 30px;
+     }
+     .main-menu{
+        top: 80px;
+        left: 0;
+        right: 0;
+    }
+     .navbar .main-menu ul li{
+        margin-top: 3px;
+        padding: 0;
+     }
+     .navbar .main-menu ul li a{
+        font-size: 12px;
+        padding: 2px 0;
+    }
+}
