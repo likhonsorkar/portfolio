@@ -30,6 +30,10 @@ section{
 section:nth-child(even){
     background-color: var(--dwhite);
 }
+.space-beetween{
+    justify-content: space-between;
+    display: flex;
+}
 
 /*==================================
     Header Area
@@ -305,6 +309,49 @@ section:nth-child(even){
     color: var(--green);
     font-size: 30px;
     letter-spacing: 4px;
+}
+.review-slider .wrapper{
+   margin: 20px;
+}
+.slider{
+    position: relative;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+}
+.review-slider .user{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.review-slider .user img{
+    height: 112px;
+    width: 112px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review-slider .user h3{
+    color:var(--pm-color);
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+.review-slider .user i{
+    font-size: 20px;
+    color:var(--green);
+}
+
+.review-slider .review p{
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.8;
+    color:var(--grey);
+}
+.review-slider .fa-quote-right{
+    position: absolute;
+    top:8px; right:8px;
+    font-size: 80px;
+    color: var(--grey);
 }
  /*===========================
     Responsive

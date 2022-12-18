@@ -5,16 +5,26 @@ menuBar.addEventListener('click', function (){
     menuLink.classList.toggle('active');
 });
 // Swiper
-var swiper = new Swiper(".main-slide", {
+var swiper = new Swiper(".review-slider", {
     spaceBetween: 30,
     centeredSlides: true,
     autoplay: {
       delay: 7500,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
    loop:true,
+   breakpoints: {
+    0: {
+        slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 1.7,
+    },
+    1024: {
+      slidesPerView: 2,
+    },
+  },
   });
