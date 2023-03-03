@@ -349,49 +349,52 @@ section:nth-child(even){
     font-size: 30px;
     letter-spacing: 4px;
 }
-.review-slider .wrapper{
-   margin: 20px;
+
+.slide{
+    padding:3rem;
+    box-shadow:var(--box-shadow);
+    border:.1rem solid rgba(0,0,0,.2);
+    border-radius: .5rem;
+    position: relative;  
+    min-height: 600px;
+    margin: 10px 0;
 }
-.slider{
-    position: relative;
-    background-color: var(--white);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);
-}
-.review-slider .user{
+
+/* .slide .fa-quote-right{
+    position: absolute;
+    top:2rem; right:2rem;
+    font-size: 6rem;
+    color:#ccc;
+} */
+
+.slide .user{
     display: flex;
-    gap: 20px;
+    gap:1.5rem;
     align-items: center;
+    padding-bottom: 1.5rem;
 }
-.review-slider .user img{
-    height: 112px;
-    width: 112px;
+
+.slide .user img{
+    height: 7rem;
+    width: 7rem;
     border-radius: 50%;
     object-fit: cover;
 }
-.review-slider .user h3{
-    color:var(--pm-color);
-    font-size: 25px;
-    padding-bottom: 8px;
+.slide .user h3{
+    color:var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
 }
-.review-slider .user i{
-    font-size: 20px;
+.slide .user i{
+    font-size: 1.3rem;
     color:var(--green);
 }
-
-.review-slider .review p{
-    margin-top: 20px;
-    font-size: 15px;
+.slide p{
+    font-size: 1.5rem;
     line-height: 1.8;
-    color:var(--grey);
+    color:var(--light-color);
 }
-.review-slider .fa-quote-right{
-    position: absolute;
-    top:8px; right:8px;
-    font-size: 80px;
-    color: var(--grey);
-}
+
 /* ========================
     Contact Area
 ==========================*/
@@ -553,6 +556,7 @@ footer{
     .about-container .about-info h3 {
         font-size: 50px;
     }
+    
 }
 @media (max-width:570px) {
     header{
